@@ -28,6 +28,11 @@ export default class UserDefaults {
             }
           }
         });
+
+        // Connect to the iframe
+        window.parent.postMessage({
+          _kojiEventName: '@@koji/userDefaults/connect',
+        }, '*');
       }
     } catch (err) {}
   }
