@@ -55,4 +55,15 @@ export default class UserDefaults {
       }
     } catch {}
   }
+
+  // Prompt the user to log in with Koji
+  public promptLogin() {
+    try {
+      if (window && window.parent) {
+        window.parent.postMessage({
+          _kojiEventName: '@@koji/userDefaults/promptLogin',
+        }, '*');
+      }
+    } catch {}
+  }
 }
