@@ -1,6 +1,6 @@
 {
   "name": "@withkoji/user-defaults",
-  "version": "0.0.5",
+  "version": "0.0.1",
   "description": "Permissioned data bridge for Koji posts",
   "main": "./dist/index.js",
   "repository": {
