@@ -8,7 +8,7 @@ Install the package:
 npm install --save @withkoji/user-defaults
 ```
 
-Import the package into your app's root.
+Import the package into your app.
 ```
 import KojiUserDefaults from '@withkoji/user-defaults';
 ```
@@ -25,7 +25,7 @@ kojiUserDefaults.onConnect((isConnected) => {
 });
 ```
 
-## Resereved keys
+## Reserved keys
 
 - `profile.username`
 - `profile.profilePicture`
