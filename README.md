@@ -16,13 +16,11 @@ import KojiUserDefaults from '@withkoji/user-defaults';
 Listen for "connected" event before making requests.
 ```
 const kojiUserDefaults = new KojiUserDefaults();
-kojiUserDefaults.onConnect((isAvailable) => {
-  if (isAvailable) {
+kojiUserDefaults.onConnect((isConnected) => {
+  if (isConnected) {
     kojiUserDefaults.get('profile.username', (success, key, value) => {
       console.log(success, key, value);
     });
-  } else {
-    kojiUserDefaults.promptLogin();
   }
 });
 ```
