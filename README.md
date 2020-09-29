@@ -1,34 +1,33 @@
-# Koji User Defaults SDK
-**Permissioned data bridge for Koji posts**
+# Koji User Defaults
 
-## Getting started
+**Permissioned data bridge for Koji templates.**
 
-Install the package:
+## Overview
+
+The @withkoji/user-defaults package provides a secure interface for accessing permissioned user data across all Koji templates. A template can request data with a reserved key, for the user’s Koji profile data, or with a user key from any template on Koji, for additional preferences. This data can then be used to autofill values and personalize experiences. For example, automatically enter the user’s name in a leaderboard, or display the user’s avatar in a game.
+
+## Installation
+
+Install the package in your Koji project.
 ```
 npm install --save @withkoji/user-defaults
 ```
 
-Import the package into your app.
+## Basic use
+
+Instantiate `KojiUserDefaults`.
 ```
 import KojiUserDefaults from '@withkoji/user-defaults';
-```
-
-Listen for "connected" event before making requests.
-```
 const kojiUserDefaults = new KojiUserDefaults();
-kojiUserDefaults.onConnect((isConnected) => {
-  if (isConnected) {
-    kojiUserDefaults.get('profile.username', (success, key, value) => {
-      console.log(success, key, value);
-    });
-  }
-});
 ```
 
-## Reserved keys
+## Related resources
 
-- `profile.username`
-- `profile.profilePicture`
-- `profile.reputation`
+* [Package documentation](https://developer.withkoji.com/reference/packages/withkoji-user-defaults-package)
+* [Koji homepage](http://withkoji.com/)
 
-Any other key represents a string value in an unscoped, portable, global storage. For example, you could define a key called `user.favoriteColor` and reuse that value across any app.
+## Contributions and questions
+
+See the [contributions page](https://developer.withkoji.com/docs/about/contribute-koji-developers) on the developer site for info on how to make contributions to Koji repositories and developer documentation.
+
+For any questions, reach out to the developer community or the `@Koji Team` on our [Discord server](https://discord.gg/eQuMJF6).
