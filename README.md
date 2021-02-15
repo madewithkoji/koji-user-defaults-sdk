@@ -5,7 +5,7 @@
 ## Overview
 
 **NOTE:**
-This package is deprecated and is included only for backwards compatibility. For new templates, use @withkoji/core.
+This package is deprecated and is included only for backwards compatibility. For new templates, use [@withkoji/core](https://developer.withkoji.com/reference/packages/withkoji-koji-core).
 
 The @withkoji/user-defaults package provides a secure interface for accessing permissioned user data across all Koji templates. A template can request data with a reserved key, for the user’s Koji profile data, or with a user key from any template on Koji, for additional preferences. This data can then be used to autofill values and personalize experiences. For example, automatically enter the user’s name in a leaderboard, or display the user’s avatar in a game.
 
