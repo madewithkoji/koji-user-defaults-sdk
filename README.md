@@ -1,17 +1,19 @@
-# Koji User Defaults
+# Koji User Defaults (deprecated)
 
 **Permissioned data bridge for Koji templates.**
 
 ## Overview
 
-**[DEPRECATED]**
-This package is deprecated and is included only for backwards compatibility. For new templates, use [@withkoji/core](https://developer.withkoji.com/reference/packages/withkoji-koji-core).
-
 The @withkoji/user-defaults package provides a secure interface for accessing permissioned user data across all Koji templates. A template can request data with a reserved key, for the user’s Koji profile data, or with a user key from any template on Koji, for additional preferences. This data can then be used to autofill values and personalize experiences. For example, automatically enter the user’s name in a leaderboard, or display the user’s avatar in a game.
+
+**[DEPRECATED]**
+This package is deprecated and is included only for backwards compatibility.
+For new templates, use [@withkoji/core](https://developer.withkoji.com/reference/core/withkoji-koji-core).
 
 ## Installation
 
 Install the package in your Koji project.
+
 ```
 npm install --save @withkoji/user-defaults
 ```
@@ -19,6 +21,7 @@ npm install --save @withkoji/user-defaults
 ## Basic use
 
 Instantiate `KojiUserDefaults`.
+
 ```
 import KojiUserDefaults from '@withkoji/user-defaults';
 const kojiUserDefaults = new KojiUserDefaults();
@@ -26,7 +29,7 @@ const kojiUserDefaults = new KojiUserDefaults();
 
 ## Related resources
 
-* [Package documentation](https://developer.withkoji.com/reference/packages/withkoji-user-defaults-package)
+* [Package documentation](https://developer.withkoji.com/reference/deprecated-packages/withkoji-user-defaults-package)
 * [Koji homepage](http://withkoji.com/)
 
 ## Contributions and questions
